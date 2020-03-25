@@ -10,3 +10,16 @@
 # multiply_by([1, 2, 3], 5)
 #
 # > [5, 10, 15]
+
+# def multiply_by(number, multiplier):
+#     for i, num in enumerate(number):
+#         number[i] = num * multiplier
+#     return number
+
+def multiply_by(dictionary, num):
+    for i in dictionary:
+        dictionary[i - 1] = dictionary[i - 1] * 5
+    print(dictionary)
+
+
+multiply_by([1, 2, 3], 5)
